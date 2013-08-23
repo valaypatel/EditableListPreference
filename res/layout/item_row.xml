@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_weight="0.95"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        style="?android:attr/textAppearanceListItem"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:text="@string/app_name" >
+    </TextView>
+
+    <ImageButton
+        android:layout_weight="0.05"
+        android:layout_width="wrap_content"
+        style="?android:borderlessButtonStyle"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/app_name"
+        android:src="@android:drawable/ic_delete" />
+
+</LinearLayout>
